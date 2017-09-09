@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_8884f2114a6c4182ac73a5ad4db295b4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8884f2114a6c4182ac73a5ad4db295b4" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_8884f2114a6c4182ac73a5ad4db295b4 = L.map(
+                                  'map_8884f2114a6c4182ac73a5ad4db295b4',
+                                  {center: [28.61,77.31],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_615d422ed68c4636a6d2830a276adc56 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_8884f2114a6c4182ac73a5ad4db295b4);
+        
+    
+            var feature_group_c1f27aa4bdf24f22a7db3ce84b58ea11 = L.featureGroup(
+                ).addTo(map_8884f2114a6c4182ac73a5ad4db295b4);
+        
+    
+
+            var marker_af27575456264ddd8922bf8b46719fbe = L.marker(
+                [28.61,77.31],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_c1f27aa4bdf24f22a7db3ce84b58ea11);
+            
+    
+
+                var icon_57d80f9bb9df470ca370e65258cba535 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_af27575456264ddd8922bf8b46719fbe.setIcon(icon_57d80f9bb9df470ca370e65258cba535);
+            
+    
+            var popup_c3ae8136f1fc42ac944933bea652a544 = L.popup({maxWidth: '300'});
+
+            
+                var html_49d089caa54f49fca9c7f5b2440656d7 = $('<div id="html_49d089caa54f49fca9c7f5b2440656d7" style="width: 100.0%; height: 100.0%;">Mayur Vihar</div>')[0];
+                popup_c3ae8136f1fc42ac944933bea652a544.setContent(html_49d089caa54f49fca9c7f5b2440656d7);
+            
+
+            marker_af27575456264ddd8922bf8b46719fbe.bindPopup(popup_c3ae8136f1fc42ac944933bea652a544);
+
+            
+        
+</script>
