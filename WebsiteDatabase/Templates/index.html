@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Data Collector App   </title>
+  <head>
+      <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>This is a movie database app</h1>
+        <h3>Please fill in the form below! </h3>
+        <div class= "message">
+          {{text| safe}}
+        </div>
+
+
+        <form action="{{url_for('success')}}" method="POST">
+
+            <input title="Your email is safe with us. Don't worry!" placeholder="Enter your email address " type="email" name="email_id"><br>
+        
+            <input title="Your email is safe with us. Don't worry!" placeholder="Enter your height " min = "50" ,max= "300" type="number" name="height"><br>
+            <button type="submit">Submit</button>
+
+
+      </form>
+    </div>
+    </body>
+
+
+
+
+</html>
